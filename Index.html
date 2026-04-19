@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCars - Renta de Carros Premium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav container">
+    <img src="Imagenes/Logo.svg" class="logo" alt="CityCars Logo">
+    <div class="nav-links">
+        <a href="#">Porque elegirnos</a>
+        <a href="#">Carros</a>
+        <a href="#">Ayuda</a>
+        <a href="#" class="btn-primary">Alquilar</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero hero-bg">
+    <div class="container hero-content">
+        <div class="hero-text-box">
+            <h1 class="hero-title">
+                Renta de <br> Carros Premium <br> en Colombia
+            </h1>
+            <p class="hero-text">
+                No te prives del placer de conducir los mejores coches premium de todo el mundo aquí y ahora
+            </p>
+        </div>
+        <div class="hero-image">
+            <img id="carroPrincipal" src="Imagenes/Porche 911.svg" alt="Carro principal">
+        </div>
+    </div>
+</header>
+
+<!-- LOGOS DE MARCAS -->
+<section class="logos">
+    <button data-carro="Imagenes/Lamborghini.svg">
+        <img src="Imagenes/Logo Peugeot.svg" alt="Peugeot">
+    </button>
+    <button data-carro="Imagenes/BMW.svg">
+        <img src="Imagenes/Logo BMW.svg" alt="BMW">
+    </button>
+    <button data-carro="Imagenes/Tesla.svg">
+        <img src="Imagenes/Logo Tesla.svg" alt="Tesla">
+    </button>
+    <button data-carro="Imagenes/Maserati.svg">
+        <img src="Imagenes/Logo Hyundai.svg" alt="Hyundai">
+    </button>
+    <button data-carro="Imagenes/Porche 911.svg">
+        <img src="Imagenes/Logo Porche.svg" alt="Porsche">
+    </button>
+    <button data-carro="Imagenes/Mercedes.svg">
+        <img src="Imagenes/Logo Mercedes Benz.svg" alt="Mercedes Benz">
+    </button>
+    <button data-carro="Imagenes/Lexus.svg">
+        <img src="Imagenes/Logo Honda.svg" alt="Honda">
+    </button>
+    <button data-carro="Imagenes/Ferrari.svg">
+        <img src="Imagenes/Logo Ferrari.svg" alt="Ferrari">
+    </button>
+    <button data-carro="Imagenes/Volkswagen.svg">
+        <img src="Imagenes/Logo Volkswagen.svg" alt="Volkswagen">
+    </button>
+</section>
+
+<!-- VEHÍCULOS -->
+<section class="section container text-center">
+    <p class="section-subtitle">SOLO LOS MEJORES CARROS</p>
+    <h2 class="section-title">Nuestros Vehículos</h2>
+    <p class="section-text">
+        Ofrecemos a nuestros clientes las emociones más increíbles al volante.<br>
+        Por eso solo contamos con coches de primera clase.
+    </p>
+
+    <div class="filters">
+        <button type="button">Premium</button>
+        <button type="button">Coupe</button>
+        <button type="button" class="active">Sedan</button>
+        <button type="button">Hatchback</button>
+        <button type="button">Pick-up</button>
+        <button type="button">Convertible</button>
+    </div>
+
+    <div class="grid grid-3">
+        <div class="card"><img src="Imagenes/image 1.svg" alt="Vehículo 1"></div>
+        <div class="card"><img src="Imagenes/image 2.svg" alt="Vehículo 2"></div>
+        <div class="card"><img src="Imagenes/image 3.svg" alt="Vehículo 3"></div>
+    </div>
+    <div class="grid grid-4">
+        <div class="card"><img src="Imagenes/image 4.svg" alt="Vehículo 4"></div>
+        <div class="card"><img src="Imagenes/image 5.svg" alt="Vehículo 5"></div>
+        <div class="card"><img src="Imagenes/image 6.svg" alt="Vehículo 6"></div>
+        <div class="card"><img src="Imagenes/image 7.svg" alt="Vehículo 7"></div>
+    </div>
+
+    <a href="#" class="btn-outline">Ver más (83 modelos) →</a>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="section bg-light text-center">
+    <p class="section-subtitle">CUIDANDO DE CADA CLIENTE</p>
+    <h2 class="section-title">¿Por qué elegirnos?</h2>
+    <p class="section-text">
+        Nuestra prioridad es la comodidad y la seguridad de nuestros clientes.<br>
+        Por eso ofrecemos el mejor servicio que pueda imaginar.
+    </p>
+
+    <div class="features">
+        <div>
+            <h4>Entrega y recolección</h4>
+            <p>Donde lo necesites, sin costo adicional.</p>
+        </div>
+        <div>
+            <h4>Asistencia 24/7</h4>
+            <p>Soporte en cualquier emergencia.</p>
+        </div>
+        <div>
+            <h4>Protección de datos</h4>
+            <p>Seguridad total de tu información.</p>
+        </div>
+        <div>
+            <h4>Proceso rápido</h4>
+            <p>Sin trámites complicados.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section text-center">
+    <h2 class="section-title">Reserva tu coche en minutos</h2>
+    <p class="section-text">Elige tu vehículo y confirma tu reserva de forma rápida y segura.</p>
+    <button class="btn-primary big">RESERVAR AHORA</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="Imagenes/Logo.svg" class="logo" alt="CityCars Logo">
+            <p>Calidad, seguridad, transparencia.</p>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <p>WhatsApp</p>
+            <p>contato@CityCars.com.co</p>
+            <p>(57) 316-029 4527</p>
+        </div>
+        <div>
+            <h4>Inscríbase</h4>
+            <p>Introduzca su correo electrónico para recibir noticias.</p>
+            <input type="email" placeholder="E-mail" aria-label="Correo electrónico">
+        </div>
+    </div>
+    <div class="footer-copy">© 2026 Todos los derechos reservados.</div>
+</footer>
+
+<script>
+    // Cambiar imagen del carro principal al hacer clic en logos de marcas
+    const carroPrincipal = document.getElementById("carroPrincipal");
+
+    document.querySelectorAll('.logos button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            carroPrincipal.src = btn.dataset.carro;
+        });
+    });
+
+    // Filtros de categoría: activar el botón seleccionado
+    const botonesFiltro = document.querySelectorAll('.filters button');
+
+    botonesFiltro.forEach(boton => {
+        boton.addEventListener('click', () => {
+            botonesFiltro.forEach(btn => btn.classList.remove('active'));
+            boton.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
