@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CityCars - Renta de Carros Premium</title>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self';"> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- ===================== HEADER ===================== -->
+        <header class="header">
+            <button class="header__menu-toggle">
+                <img src="Imagenes/Menu.svg" alt="Menu" />
+            </button>
+            <figure class="header__logo">
+                <img src="Imagenes/Logo.svg" alt="CityCars Logo" />
+            </figure>
+            <div></div>
+        </header>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Renta de Carros Premiun en Colombia</h1>
+                <p class="hero__description">
+                    No te prives del placer de conducir los mejores coches
+                    premium de todo el mundo aqui y ahora
+                </p>
+            </div>
+            <figure class="hero__background">
+                <img src="Imagenes/Texture.svg" alt="Texture" />
+            </figure>
+            <img
+                src="Imagenes/Porche 911.svg"
+                alt="Porche 911"
+                class="hero__image"
+            />
+            <div class="hero__brands">
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Honda.svg"
+                        alt="Logo Honda"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Mazda.svg"
+                        alt="Logo Mazda"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Volkswagen.svg"
+                        alt="Logo Volkswagen"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Peugeot.svg"
+                        alt="Logo Peugeot"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Hyundai.svg"
+                        alt="Logo Hyundai"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Toyota.svg"
+                        alt="Logo Toyota"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Tesla.svg"
+                        alt="Logo Tesla"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo Mercedes Benz.svg"
+                        alt="Logo Mercedes Benz"
+                        class="hero__brand-logo"
+                    />
+                </button>
+                <button class="hero__brand-btn">
+                    <img
+                        src="Imagenes/Logo BMW.svg"
+                        alt="Logo BMW"
+                        class="hero__brand-logo"
+                    />
+                </button>
+            </div>
+        </section>
+
+        <!-- ===================== GALLERY ===================== -->
+        <section class="gallery">
+            <div class="gallery__header">
+                <p class="gallery__eyebrow">SOLO LOS MEJORES CARROS</p>
+                <div class="gallery__intro">
+                    <h2 class="gallery__title">Nuestros Vehículos</h2>
+                    <p class="gallery__description">
+                        Ofrecemos a nuestros clientes las emociones más
+                        increíbles al volante. Por eso solo contamos con coches
+                        de primera clase.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery__carousel">
+                <nav class="gallery__filters">
+                    <button class="gallery__filter-btn">Premium</button>
+                    <button class="gallery__filter-btn">Coupe</button>
+                    <button class="gallery__filter-btn">Sedan</button>
+                    <button class="gallery__filter-btn">Hatchback</button>
+                    <button class="gallery__filter-btn">Pick-up</button>
+                    <button class="gallery__filter-btn">Convertible</button>
+                </nav>
+                <div class="gallery__carousel-body">
+                    <div class="gallery__slide-wrapper">
+                        <div class="gallery__slide">
+                            <button class="gallery__arrow gallery__arrow--prev">
+                                <img
+                                    src="Imagenes/Left Arrow.svg"
+                                    alt="Left Arrow"
+                                />
+                            </button>
+                            <figure class="gallery__image">
+                                <img
+                                    src="Imagenes/Picture - Mercedez Benz - Clase A.svg"
+                                    alt="Picture Category"
+                                />
+                            </figure>
+                            <button class="gallery__arrow gallery__arrow--next">
+                                <img
+                                    src="Imagenes/Right Arrow.svg"
+                                    alt="Right Arrow"
+                                />
+                            </button>
+                        </div>
+                        <div class="gallery__indicators">
+                            <button class="gallery__dot"></button>
+                        </div>
+                    </div>
+                    <a href="" class="gallery__cta"
+                        >Ver todos los modelos
+                        <img src="Imagenes/Arrow Black.svg" alt="Button Arrow"
+                    /></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== REASONS ===================== -->
+        <section class="reasons">
+            <div class="reasons__header">
+                <p class="reasons__eyebrow">CUIDANDO DE CADA CLIENTE</p>
+                <div class="reasons__intro">
+                    <h2 class="reasons__title">¿Por qué elegirnos?</h2>
+                    <p class="reasons__description">
+                        Nuestra Prioridad es la comodidad y la seguridad de
+                        nuestros clientes. Por eso ofrecemos el mejor servicio
+                        que pueda imaginar.
+                    </p>
+                </div>
+            </div>
+            <ul class="reasons__list">
+                <li class="reasons__item">
+                    <figure class="reasons__item-icon">
+                        <img src="Imagenes/Llaves.svg" alt="Llaves" />
+                    </figure>
+                    <p class="reasons__item-text">
+                        Entrega y recolección del vehículo donde lo necesites,
+                        sin costo adicional.
+                    </p>
+                </li>
+                <li class="reasons__item">
+                    <figure class="reasons__item-icon">
+                        <img src="Imagenes/Text-voice.svg" alt="Text-voice" />
+                    </figure>
+                    <p class="reasons__item-text">
+                        Asistencia vial y soporte 24/7 en cualquier emergencia.
+                    </p>
+                </li>
+                <li class="reasons__item">
+                    <figure class="reasons__item-icon">
+                        <img src="Imagenes/Candado.svg" alt="Candado" />
+                    </figure>
+                    <p class="reasons__item-text">
+                        Protección total de tus datos personales y métodos de
+                        pago.
+                    </p>
+                </li>
+                <li class="reasons__item">
+                    <figure class="reasons__item-icon">
+                        <img src="Imagenes/Manos.svg" alt="Manos" />
+                    </figure>
+                    <p class="reasons__item-text">
+                        Proceso de renta rápido y sin trámites complicados.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===================== CTA ===================== -->
+        <section class="cta">
+            <h2 class="cta__title">Reserva tu coche en minutos</h2>
+            <p class="cta__description">
+                Elige tu vehículo y confirma tu reserva de forma rápida y
+                segura. Sin trámites complicados.
+            </p>
+            <button class="cta__btn">
+                <img src="Imagenes/Whatsapp.svg" alt="Whatsapp" />RESERVAR AHORA
+            </button>
+        </section>
+
+        <hr class="separator" />
+
+        <!-- ===================== FOOTER ===================== -->
+        <footer class="footer">
+            <div class="footer__brand">
+                <figure class="footer__logo">
+                    <img src="Imagenes/Logo.svg" alt="Logo" />
+                </figure>
+                <p class="footer__tagline">
+                    Calidad, seguridad, transparencia.
+                </p>
+                <nav class="footer__social-nav">
+                    <a
+                        href=""
+                        class="footer__social-btn footer__social-btn--instagram"
+                    >
+                        <img
+                            src="Imagenes/Imagen-instagram.svg"
+                            alt="Instagram"
+                        />
+                    </a>
+                    <a
+                        href=""
+                        class="footer__social-btn footer__social-btn--facebook"
+                    >
+                        <img
+                            src="Imagenes/Imagen-facebook.svg"
+                            alt="Facebook"
+                        />
+                    </a>
+                    <a
+                        href=""
+                        class="footer__social-btn footer__social-btn--youtube"
+                    >
+                        <img src="Imagenes/Imagen-youtube.svg" alt="Youtube" />
+                    </a>
+                    <a
+                        href=""
+                        class="footer__social-btn footer__social-btn--whatsapp"
+                    >
+                        <img
+                            src="Imagenes/Imagen-whatsapp.svg"
+                            alt="Whatsapp"
+                        />
+                    </a>
+                </nav>
+            </div>
+            <div class="footer__contact">
+                <h3 class="footer__contact-title">Contacto</h3>
+                <a
+                    href=""
+                    class="footer__contact-link footer__contact-link--whatsapp"
+                >Whatsapp</a>
+                <a href="" class="footer__contact-link"
+                    >contato@CityCars.com.co</a
+                >
+                <a href="" class="footer__contact-link">(57) 316-029 4527</a>
+            </div>
+            <div class="footer__newsletter">
+                <h3 class="footer__newsletter-title">Inscribase</h3>
+                <p class="footer__newsletter-description">
+                    Introduzca su correo electrónico para recibir las últimas
+                    noticias de CityCars.
+                </p>
+                <form action="" class="footer__form">
+                    <input
+                        type="text"
+                        placeholder="E-mail"
+                        class="footer__newsletter-input"
+                    />
+                    <button class="footer__newsletter-btn">
+                        <img src="Imagenes/Arrow White.svg" alt="Arrow Send" />
+                    </button>
+                </form>
+            </div>
+            <small class="footer__copyright"
+                >© 2026 Todos los derechos reservados.</small
+            >
+        </footer>
+    </body>
+</html>
