@@ -1,0 +1,2129 @@
+{
+  "fecha": "2026-10-29",
+  "fuente": "pg_catalog de la instancia local; solo metadatos",
+  "version": "17.11",
+  "tablas": [
+    {
+      "nombre": "admin_actions"
+    },
+    {
+      "nombre": "financial_entries"
+    },
+    {
+      "nombre": "fleet_events"
+    },
+    {
+      "nombre": "fleet_files"
+    },
+    {
+      "nombre": "incident_messages"
+    },
+    {
+      "nombre": "incidents"
+    },
+    {
+      "nombre": "maintenance"
+    },
+    {
+      "nombre": "renter_favorites"
+    },
+    {
+      "nombre": "renter_notifications"
+    },
+    {
+      "nombre": "reservations"
+    },
+    {
+      "nombre": "reviews"
+    },
+    {
+      "nombre": "sessions"
+    },
+    {
+      "nombre": "users"
+    },
+    {
+      "nombre": "vehicle_documents"
+    },
+    {
+      "nombre": "vehicle_images"
+    },
+    {
+      "nombre": "vehicles"
+    }
+  ],
+  "columnas": [
+    {
+      "tabla": "admin_actions",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "admin_actions",
+      "campo": "admin_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "admin_actions",
+      "campo": "entity_type",
+      "tipo": "character varying(20)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "admin_actions",
+      "campo": "entity_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "admin_actions",
+      "campo": "action",
+      "tipo": "character varying(40)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "admin_actions",
+      "campo": "reason",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "admin_actions",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "reservation_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "kind",
+      "tipo": "character varying(12)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "amount",
+      "tipo": "numeric(14,2)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "reference",
+      "tipo": "character varying(180)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "paid_on",
+      "tipo": "date",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "created_by",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "financial_entries",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "owner_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "vehicle_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "module",
+      "tipo": "character varying(24)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "record_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "action",
+      "tipo": "character varying(60)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "detail",
+      "tipo": "jsonb",
+      "nulo": false,
+      "defecto": "'{}'::jsonb",
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "read_at",
+      "tipo": "timestamp with time zone",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_events",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_files",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "fleet_files",
+      "campo": "owner_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_files",
+      "campo": "name",
+      "tipo": "character varying(180)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_files",
+      "campo": "mime",
+      "tipo": "character varying(40)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_files",
+      "campo": "content",
+      "tipo": "bytea",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "fleet_files",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "incident_messages",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "incident_messages",
+      "campo": "incident_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incident_messages",
+      "campo": "author_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incident_messages",
+      "campo": "body",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incident_messages",
+      "campo": "file_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incident_messages",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "incidents",
+      "campo": "created_by",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "vehicle_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "owner_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "title",
+      "tipo": "character varying(160)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "description",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "priority",
+      "tipo": "character varying(10)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "status",
+      "tipo": "character varying(16)",
+      "nulo": false,
+      "defecto": "'ABIERTA'::character varying",
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "resolution",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": "''::text",
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "updated_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "reservation_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "kind",
+      "tipo": "character varying(30)",
+      "nulo": false,
+      "defecto": "'GENERAL'::character varying",
+      "identidad": ""
+    },
+    {
+      "tabla": "incidents",
+      "campo": "file_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "vehicle_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "kind",
+      "tipo": "character varying(80)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "description",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "due_date",
+      "tipo": "date",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "due_km",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "start_date",
+      "tipo": "date",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "end_date",
+      "tipo": "date",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "status",
+      "tipo": "character varying(12)",
+      "nulo": false,
+      "defecto": "'PROGRAMADO'::character varying",
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "completed_date",
+      "tipo": "date",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "mileage",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "cost",
+      "tipo": "numeric(14,2)",
+      "nulo": false,
+      "defecto": "0",
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "file_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "maintenance",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_favorites",
+      "campo": "renter_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_favorites",
+      "campo": "vehicle_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_favorites",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_notifications",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "renter_notifications",
+      "campo": "renter_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_notifications",
+      "campo": "reservation_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_notifications",
+      "campo": "status",
+      "tipo": "character varying(12)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_notifications",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "renter_notifications",
+      "campo": "read_at",
+      "tipo": "timestamp with time zone",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "reservations",
+      "campo": "vehicle_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "renter_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "start_date",
+      "tipo": "date",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "end_date",
+      "tipo": "date",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "daily_price",
+      "tipo": "numeric(12,2)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "days",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "total",
+      "tipo": "numeric(14,2)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "commission",
+      "tipo": "numeric(14,2)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "status",
+      "tipo": "character varying(12)",
+      "nulo": false,
+      "defecto": "'CONFIRMADA'::character varying",
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "delivery_km",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "return_km",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "delivered_at",
+      "tipo": "timestamp with time zone",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "returned_at",
+      "tipo": "timestamp with time zone",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "start_time",
+      "tipo": "time without time zone",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reservations",
+      "campo": "end_time",
+      "tipo": "time without time zone",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reviews",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "reviews",
+      "campo": "reservation_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reviews",
+      "campo": "rating",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reviews",
+      "campo": "comment",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "reviews",
+      "campo": "recommendation",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": "''::text",
+      "identidad": ""
+    },
+    {
+      "tabla": "reviews",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "sessions",
+      "campo": "sid",
+      "tipo": "character varying",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "sessions",
+      "campo": "sess",
+      "tipo": "json",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "sessions",
+      "campo": "expire",
+      "tipo": "timestamp(6) without time zone",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "users",
+      "campo": "name",
+      "tipo": "character varying(100)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "email",
+      "tipo": "character varying(254)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "password_hash",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "role",
+      "tipo": "character varying(20)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "suspended",
+      "tipo": "boolean",
+      "nulo": false,
+      "defecto": "false",
+      "identidad": ""
+    },
+    {
+      "tabla": "users",
+      "campo": "suspension_reason",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": "''::text",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "vehicle_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "kind",
+      "tipo": "character varying(8)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "expires_on",
+      "tipo": "date",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "file_id",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "verified",
+      "tipo": "boolean",
+      "nulo": false,
+      "defecto": "false",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_documents",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_images",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "vehicle_images",
+      "campo": "owner_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_images",
+      "campo": "content",
+      "tipo": "bytea",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicle_images",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": "a"
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "owner_id",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "brand",
+      "tipo": "character varying(60)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "model",
+      "tipo": "character varying(80)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "year",
+      "tipo": "integer",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "city",
+      "tipo": "character varying(80)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "daily_price",
+      "tipo": "numeric(12,2)",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "description",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "image",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "status",
+      "tipo": "character varying(24)",
+      "nulo": false,
+      "defecto": "'PENDIENTE_APROBACION'::character varying",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "created_at",
+      "tipo": "timestamp with time zone",
+      "nulo": false,
+      "defecto": "now()",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "blocked",
+      "tipo": "boolean",
+      "nulo": false,
+      "defecto": "false",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "block_reason",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": "''::text",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "paused",
+      "tipo": "boolean",
+      "nulo": false,
+      "defecto": "false",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "archived",
+      "tipo": "boolean",
+      "nulo": false,
+      "defecto": "false",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "mileage",
+      "tipo": "integer",
+      "nulo": true,
+      "defecto": null,
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "features",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": "''::text",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "conditions",
+      "tipo": "text",
+      "nulo": false,
+      "defecto": "''::text",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "photos",
+      "tipo": "jsonb",
+      "nulo": false,
+      "defecto": "'[]'::jsonb",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "rtm_required",
+      "tipo": "boolean",
+      "nulo": false,
+      "defecto": "false",
+      "identidad": ""
+    },
+    {
+      "tabla": "vehicles",
+      "campo": "photo_categories",
+      "tipo": "jsonb",
+      "nulo": false,
+      "defecto": "'{}'::jsonb",
+      "identidad": ""
+    }
+  ],
+  "restricciones": [
+    {
+      "tabla": "admin_actions",
+      "nombre": "admin_actions_admin_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (admin_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "admin_id"
+      ]
+    },
+    {
+      "tabla": "admin_actions",
+      "nombre": "admin_actions_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_amount_check",
+      "tipo": "c",
+      "definicion": "CHECK ((amount > (0)::numeric))",
+      "destino": "",
+      "campos": [
+        "amount"
+      ]
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_created_by_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (created_by) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "created_by"
+      ]
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_kind_check",
+      "tipo": "c",
+      "definicion": "CHECK (((kind)::text = ANY ((ARRAY['COBRO'::character varying, 'DESEMBOLSO'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "kind"
+      ]
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_reference_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (reference)",
+      "destino": "",
+      "campos": [
+        "reference"
+      ]
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_reservation_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (reservation_id) REFERENCES reservations(id)",
+      "destino": "reservations",
+      "campos": [
+        "reservation_id"
+      ]
+    },
+    {
+      "tabla": "fleet_events",
+      "nombre": "fleet_events_owner_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (owner_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "owner_id"
+      ]
+    },
+    {
+      "tabla": "fleet_events",
+      "nombre": "fleet_events_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "fleet_events",
+      "nombre": "fleet_events_vehicle_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)",
+      "destino": "vehicles",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "fleet_files",
+      "nombre": "fleet_files_content_check",
+      "tipo": "c",
+      "definicion": "CHECK ((octet_length(content) <= 3145728))",
+      "destino": "",
+      "campos": [
+        "content"
+      ]
+    },
+    {
+      "tabla": "fleet_files",
+      "nombre": "fleet_files_owner_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (owner_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "owner_id"
+      ]
+    },
+    {
+      "tabla": "fleet_files",
+      "nombre": "fleet_files_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "incident_messages",
+      "nombre": "incident_messages_author_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (author_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "author_id"
+      ]
+    },
+    {
+      "tabla": "incident_messages",
+      "nombre": "incident_messages_file_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (file_id) REFERENCES fleet_files(id)",
+      "destino": "fleet_files",
+      "campos": [
+        "file_id"
+      ]
+    },
+    {
+      "tabla": "incident_messages",
+      "nombre": "incident_messages_incident_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (incident_id) REFERENCES incidents(id)",
+      "destino": "incidents",
+      "campos": [
+        "incident_id"
+      ]
+    },
+    {
+      "tabla": "incident_messages",
+      "nombre": "incident_messages_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_created_by_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (created_by) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "created_by"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_file_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (file_id) REFERENCES fleet_files(id)",
+      "destino": "fleet_files",
+      "campos": [
+        "file_id"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_owner_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (owner_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "owner_id"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_priority_check",
+      "tipo": "c",
+      "definicion": "CHECK (((priority)::text = ANY ((ARRAY['BAJA'::character varying, 'MEDIA'::character varying, 'ALTA'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "priority"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_reservation_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (reservation_id) REFERENCES reservations(id)",
+      "destino": "reservations",
+      "campos": [
+        "reservation_id"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_status_check",
+      "tipo": "c",
+      "definicion": "CHECK (((status)::text = ANY ((ARRAY['ABIERTA'::character varying, 'EN_REVISION'::character varying, 'PENDIENTE_INFO'::character varying, 'RESUELTA'::character varying, 'CERRADA'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "status"
+      ]
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_vehicle_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)",
+      "destino": "vehicles",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_check",
+      "tipo": "c",
+      "definicion": "CHECK ((((start_date IS NULL) AND (end_date IS NULL)) OR ((start_date IS NOT NULL) AND (end_date IS NOT NULL) AND (end_date > start_date))))",
+      "destino": "",
+      "campos": [
+        "start_date",
+        "end_date"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_cost_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cost >= (0)::numeric))",
+      "destino": "",
+      "campos": [
+        "cost"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_due_km_check",
+      "tipo": "c",
+      "definicion": "CHECK ((due_km >= 0))",
+      "destino": "",
+      "campos": [
+        "due_km"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_file_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (file_id) REFERENCES fleet_files(id)",
+      "destino": "fleet_files",
+      "campos": [
+        "file_id"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_mileage_check",
+      "tipo": "c",
+      "definicion": "CHECK ((mileage >= 0))",
+      "destino": "",
+      "campos": [
+        "mileage"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_status_check",
+      "tipo": "c",
+      "definicion": "CHECK (((status)::text = ANY ((ARRAY['PROGRAMADO'::character varying, 'COMPLETADO'::character varying, 'CANCELADO'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "status"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_vehicle_id_daterange_excl",
+      "tipo": "x",
+      "definicion": "EXCLUDE USING gist (vehicle_id WITH =, daterange(start_date, end_date, '[)'::text) WITH &&) WHERE ((((status)::text = 'PROGRAMADO'::text) AND (start_date IS NOT NULL)))",
+      "destino": "",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_vehicle_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)",
+      "destino": "vehicles",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "renter_favorites",
+      "nombre": "renter_favorites_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (renter_id, vehicle_id)",
+      "destino": "",
+      "campos": [
+        "renter_id",
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "renter_favorites",
+      "nombre": "renter_favorites_renter_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (renter_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "renter_id"
+      ]
+    },
+    {
+      "tabla": "renter_favorites",
+      "nombre": "renter_favorites_vehicle_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)",
+      "destino": "vehicles",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "renter_notifications",
+      "nombre": "renter_notifications_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "renter_notifications",
+      "nombre": "renter_notifications_renter_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (renter_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "renter_id"
+      ]
+    },
+    {
+      "tabla": "renter_notifications",
+      "nombre": "renter_notifications_reservation_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (reservation_id) REFERENCES reservations(id)",
+      "destino": "reservations",
+      "campos": [
+        "reservation_id"
+      ]
+    },
+    {
+      "tabla": "renter_notifications",
+      "nombre": "renter_notifications_reservation_id_status_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (reservation_id, status)",
+      "destino": "",
+      "campos": [
+        "reservation_id",
+        "status"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_check",
+      "tipo": "c",
+      "definicion": "CHECK ((total = ((days)::numeric * daily_price)))",
+      "destino": "",
+      "campos": [
+        "total",
+        "days",
+        "daily_price"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_check1",
+      "tipo": "c",
+      "definicion": "CHECK ((commission = round((total * 0.10), 2)))",
+      "destino": "",
+      "campos": [
+        "commission",
+        "total"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_check2",
+      "tipo": "c",
+      "definicion": "CHECK (((end_date > start_date) AND (days = (end_date - start_date))))",
+      "destino": "",
+      "campos": [
+        "end_date",
+        "start_date",
+        "days"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_check3",
+      "tipo": "c",
+      "definicion": "CHECK ((return_km >= delivery_km))",
+      "destino": "",
+      "campos": [
+        "return_km",
+        "delivery_km"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_daily_price_check",
+      "tipo": "c",
+      "definicion": "CHECK ((daily_price > (0)::numeric))",
+      "destino": "",
+      "campos": [
+        "daily_price"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_days_check",
+      "tipo": "c",
+      "definicion": "CHECK ((days > 0))",
+      "destino": "",
+      "campos": [
+        "days"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_delivery_km_check",
+      "tipo": "c",
+      "definicion": "CHECK ((delivery_km >= 0))",
+      "destino": "",
+      "campos": [
+        "delivery_km"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_renter_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (renter_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "renter_id"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_status_check",
+      "tipo": "c",
+      "definicion": "CHECK (((status)::text = ANY ((ARRAY['CONFIRMADA'::character varying, 'CANCELADA'::character varying, 'FINALIZADA'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "status"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_vehicle_id_daterange_excl",
+      "tipo": "x",
+      "definicion": "EXCLUDE USING gist (vehicle_id WITH =, daterange(start_date, end_date, '[)'::text) WITH &&) WHERE (((status)::text = 'CONFIRMADA'::text))",
+      "destino": "",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_vehicle_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)",
+      "destino": "vehicles",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "reviews_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "reviews_rating_check",
+      "tipo": "c",
+      "definicion": "CHECK (((rating >= 1) AND (rating <= 5)))",
+      "destino": "",
+      "campos": [
+        "rating"
+      ]
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "reviews_reservation_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (reservation_id) REFERENCES reservations(id)",
+      "destino": "reservations",
+      "campos": [
+        "reservation_id"
+      ]
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "reviews_reservation_id_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (reservation_id)",
+      "destino": "",
+      "campos": [
+        "reservation_id"
+      ]
+    },
+    {
+      "tabla": "sessions",
+      "nombre": "sessions_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (sid)",
+      "destino": "",
+      "campos": [
+        "sid"
+      ]
+    },
+    {
+      "tabla": "users",
+      "nombre": "users_email_check",
+      "tipo": "c",
+      "definicion": "CHECK (((email)::text = lower((email)::text)))",
+      "destino": "",
+      "campos": [
+        "email"
+      ]
+    },
+    {
+      "tabla": "users",
+      "nombre": "users_email_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (email)",
+      "destino": "",
+      "campos": [
+        "email"
+      ]
+    },
+    {
+      "tabla": "users",
+      "nombre": "users_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "users",
+      "nombre": "users_role_check",
+      "tipo": "c",
+      "definicion": "CHECK (((role)::text = ANY ((ARRAY['ARRENDATARIO'::character varying, 'PROPIETARIO'::character varying, 'ADMINISTRADOR'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "role"
+      ]
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "vehicle_documents_file_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (file_id) REFERENCES fleet_files(id)",
+      "destino": "fleet_files",
+      "campos": [
+        "file_id"
+      ]
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "vehicle_documents_kind_check",
+      "tipo": "c",
+      "definicion": "CHECK (((kind)::text = ANY ((ARRAY['SOAT'::character varying, 'RTM'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "kind"
+      ]
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "vehicle_documents_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "vehicle_documents_vehicle_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (vehicle_id) REFERENCES vehicles(id)",
+      "destino": "vehicles",
+      "campos": [
+        "vehicle_id"
+      ]
+    },
+    {
+      "tabla": "vehicle_images",
+      "nombre": "vehicle_images_content_check",
+      "tipo": "c",
+      "definicion": "CHECK ((octet_length(content) <= 3145728))",
+      "destino": "",
+      "campos": [
+        "content"
+      ]
+    },
+    {
+      "tabla": "vehicle_images",
+      "nombre": "vehicle_images_owner_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (owner_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "owner_id"
+      ]
+    },
+    {
+      "tabla": "vehicle_images",
+      "nombre": "vehicle_images_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_daily_price_check",
+      "tipo": "c",
+      "definicion": "CHECK ((daily_price > (0)::numeric))",
+      "destino": "",
+      "campos": [
+        "daily_price"
+      ]
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_mileage_check",
+      "tipo": "c",
+      "definicion": "CHECK ((mileage >= 0))",
+      "destino": "",
+      "campos": [
+        "mileage"
+      ]
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_owner_id_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (owner_id) REFERENCES users(id)",
+      "destino": "users",
+      "campos": [
+        "owner_id"
+      ]
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)",
+      "destino": "",
+      "campos": [
+        "id"
+      ]
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_status_check",
+      "tipo": "c",
+      "definicion": "CHECK (((status)::text = ANY ((ARRAY['PENDIENTE_APROBACION'::character varying, 'APROBADO'::character varying, 'RECHAZADO'::character varying, 'INACTIVO'::character varying])::text[])))",
+      "destino": "",
+      "campos": [
+        "status"
+      ]
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_year_check",
+      "tipo": "c",
+      "definicion": "CHECK (((year >= 1950) AND (year <= 2200)))",
+      "destino": "",
+      "campos": [
+        "year"
+      ]
+    }
+  ],
+  "indices": [
+    {
+      "tabla": "admin_actions",
+      "nombre": "admin_actions_pkey",
+      "definicion": "CREATE UNIQUE INDEX admin_actions_pkey ON public.admin_actions USING btree (id)"
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_pkey",
+      "definicion": "CREATE UNIQUE INDEX financial_entries_pkey ON public.financial_entries USING btree (id)"
+    },
+    {
+      "tabla": "financial_entries",
+      "nombre": "financial_entries_reference_key",
+      "definicion": "CREATE UNIQUE INDEX financial_entries_reference_key ON public.financial_entries USING btree (reference)"
+    },
+    {
+      "tabla": "fleet_events",
+      "nombre": "fleet_events_owner_idx",
+      "definicion": "CREATE INDEX fleet_events_owner_idx ON public.fleet_events USING btree (owner_id, id DESC)"
+    },
+    {
+      "tabla": "fleet_events",
+      "nombre": "fleet_events_pkey",
+      "definicion": "CREATE UNIQUE INDEX fleet_events_pkey ON public.fleet_events USING btree (id)"
+    },
+    {
+      "tabla": "fleet_files",
+      "nombre": "fleet_files_pkey",
+      "definicion": "CREATE UNIQUE INDEX fleet_files_pkey ON public.fleet_files USING btree (id)"
+    },
+    {
+      "tabla": "incident_messages",
+      "nombre": "incident_messages_pkey",
+      "definicion": "CREATE UNIQUE INDEX incident_messages_pkey ON public.incident_messages USING btree (id)"
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "incidents_pkey",
+      "definicion": "CREATE UNIQUE INDEX incidents_pkey ON public.incidents USING btree (id)"
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_pkey",
+      "definicion": "CREATE UNIQUE INDEX maintenance_pkey ON public.maintenance USING btree (id)"
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "maintenance_vehicle_id_daterange_excl",
+      "definicion": "CREATE INDEX maintenance_vehicle_id_daterange_excl ON public.maintenance USING gist (vehicle_id, daterange(start_date, end_date, '[)'::text)) WHERE (((status)::text = 'PROGRAMADO'::text) AND (start_date IS NOT NULL))"
+    },
+    {
+      "tabla": "renter_favorites",
+      "nombre": "renter_favorites_pkey",
+      "definicion": "CREATE UNIQUE INDEX renter_favorites_pkey ON public.renter_favorites USING btree (renter_id, vehicle_id)"
+    },
+    {
+      "tabla": "renter_notifications",
+      "nombre": "renter_notifications_pkey",
+      "definicion": "CREATE UNIQUE INDEX renter_notifications_pkey ON public.renter_notifications USING btree (id)"
+    },
+    {
+      "tabla": "renter_notifications",
+      "nombre": "renter_notifications_reservation_id_status_key",
+      "definicion": "CREATE UNIQUE INDEX renter_notifications_reservation_id_status_key ON public.renter_notifications USING btree (reservation_id, status)"
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_pkey",
+      "definicion": "CREATE UNIQUE INDEX reservations_pkey ON public.reservations USING btree (id)"
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_renter_idx",
+      "definicion": "CREATE INDEX reservations_renter_idx ON public.reservations USING btree (renter_id)"
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "reservations_vehicle_id_daterange_excl",
+      "definicion": "CREATE INDEX reservations_vehicle_id_daterange_excl ON public.reservations USING gist (vehicle_id, daterange(start_date, end_date, '[)'::text)) WHERE ((status)::text = 'CONFIRMADA'::text)"
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "reviews_pkey",
+      "definicion": "CREATE UNIQUE INDEX reviews_pkey ON public.reviews USING btree (id)"
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "reviews_reservation_id_key",
+      "definicion": "CREATE UNIQUE INDEX reviews_reservation_id_key ON public.reviews USING btree (reservation_id)"
+    },
+    {
+      "tabla": "sessions",
+      "nombre": "sessions_expire_idx",
+      "definicion": "CREATE INDEX sessions_expire_idx ON public.sessions USING btree (expire)"
+    },
+    {
+      "tabla": "sessions",
+      "nombre": "sessions_pkey",
+      "definicion": "CREATE UNIQUE INDEX sessions_pkey ON public.sessions USING btree (sid)"
+    },
+    {
+      "tabla": "users",
+      "nombre": "users_email_key",
+      "definicion": "CREATE UNIQUE INDEX users_email_key ON public.users USING btree (email)"
+    },
+    {
+      "tabla": "users",
+      "nombre": "users_pkey",
+      "definicion": "CREATE UNIQUE INDEX users_pkey ON public.users USING btree (id)"
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "documents_vehicle_idx",
+      "definicion": "CREATE INDEX documents_vehicle_idx ON public.vehicle_documents USING btree (vehicle_id, kind, id DESC)"
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "vehicle_documents_pkey",
+      "definicion": "CREATE UNIQUE INDEX vehicle_documents_pkey ON public.vehicle_documents USING btree (id)"
+    },
+    {
+      "tabla": "vehicle_images",
+      "nombre": "vehicle_images_owner_idx",
+      "definicion": "CREATE INDEX vehicle_images_owner_idx ON public.vehicle_images USING btree (owner_id)"
+    },
+    {
+      "tabla": "vehicle_images",
+      "nombre": "vehicle_images_pkey",
+      "definicion": "CREATE UNIQUE INDEX vehicle_images_pkey ON public.vehicle_images USING btree (id)"
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_owner_idx",
+      "definicion": "CREATE INDEX vehicles_owner_idx ON public.vehicles USING btree (owner_id)"
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "vehicles_pkey",
+      "definicion": "CREATE UNIQUE INDEX vehicles_pkey ON public.vehicles USING btree (id)"
+    }
+  ],
+  "disparadores": [
+    {
+      "tabla": "financial_entries",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.financial_entries FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "incident_messages",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.incident_messages FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "incidents",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.incidents FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "maintenance",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.maintenance FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.reservations FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "reservations",
+      "nombre": "renter_reservation_notice",
+      "definicion": "CREATE TRIGGER renter_reservation_notice AFTER INSERT OR UPDATE OF status ON public.reservations FOR EACH ROW EXECUTE FUNCTION notify_renter_reservation()"
+    },
+    {
+      "tabla": "reviews",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.reviews FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "vehicle_documents",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.vehicle_documents FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    },
+    {
+      "tabla": "vehicles",
+      "nombre": "fleet_track_changes",
+      "definicion": "CREATE TRIGGER fleet_track_changes AFTER INSERT OR UPDATE ON public.vehicles FOR EACH ROW EXECUTE FUNCTION fleet_track()"
+    }
+  ]
+}

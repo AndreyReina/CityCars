@@ -1,0 +1,50 @@
+{
+  "retrieved": "2026-10-28",
+  "vehicleYear": 2026,
+  "sources": [
+    {
+      "file": "vehicles-2026.pdf",
+      "rows": 4698,
+      "sha256": "f80d6f482dafa75320f7a1e382476bb1d35ecd2b18718593ad115b12765b57e1"
+    },
+    {
+      "file": "table2.pdf",
+      "rows": 3281,
+      "sha256": "727ce8ca49fa03e75ecc00682a6018bd5578d0d3036e7b2fb217ab93e41a5865"
+    },
+    {
+      "file": "table3.pdf",
+      "rows": 588,
+      "sha256": "ff38d4846db0fdd7298deb3bb1e12b11ad5febf3487c9051e507b13883a9f541"
+    },
+    {
+      "file": "table4.pdf",
+      "rows": 197,
+      "sha256": "59ba07f499350dd78d5ca64afd2ca2cb964bca768d6db377fa962f7af2070c60"
+    },
+    {
+      "file": "table9.pdf",
+      "rows": 231,
+      "sha256": "288ca5b680770b6d32a2ad232070ed3fd8b1e8aa6433b7c042fd9599841e0aee"
+    },
+    {
+      "file": "municipalities.json",
+      "sha256": "1028ab04c10a08fa860dd89e621de1eb9246710a56102c915f0988ae9e10d63d",
+      "rows": 1122
+    }
+  ],
+  "brands": 211,
+  "models": 7609,
+  "locations": 1122,
+  "supplements": [
+    {
+      "url": "https://www.xpeng.com/co/",
+      "brand": "XPENG",
+      "models": [
+        "G6",
+        "G9",
+        "L03"
+      ]
+    }
+  ]
+}
